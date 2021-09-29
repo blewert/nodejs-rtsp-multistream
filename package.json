@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node multistream.js"
+  },
+  "dependencies": {
+    "node-rtsp-stream": "^0.0.9"
+  }
+}

@@ -1,0 +1,37 @@
+<html>
+
+<body>
+    <style>
+        canvas { 
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+    <canvas id="canvas4"></canvas>
+    <canvas id="canvas5"></canvas>
+    <canvas id="canvas6"></canvas>
+    <canvas id="canvas7"></canvas>
+    <canvas id="canvas8"></canvas>
+    <canvas id="canvas9"></canvas>
+    <canvas id="canvas10"></canvas>
+    <canvas id="canvas11"></canvas>
+
+</body>
+
+<script type="text/javascript" src="jsmpeg.min.js"></script>
+<script type="text/javascript">
+    let canvases = ["canvas", "canvas2", "canvas3", "canvas4", "canvas5", "canvas6", "canvas7", "canvas8" , "canvas9", "canvas10", "canvas11"];
+    let port = 6969;
+
+    for(let canvas of canvases)
+    {
+        player = new JSMpeg.Player(`ws://localhost:${port++}`, {
+            canvas: document.getElementById(canvas) // Canvas should be a canvas DOM element
+        })
+    }
+</script>
+
+</html>

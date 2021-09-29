@@ -1,0 +1,9 @@
+{
+    "streams": [
+        {
+            "port": 6969,
+            "key": "1A Front",
+            "url": "something"
+        }     
+    ]
+}
